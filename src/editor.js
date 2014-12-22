@@ -82,6 +82,16 @@ var editor = Overlay.extend([Mixin],{
       overlay = _self.get('overlay');
     overlay && overlay.hide();
   },
+
+  /**
+   * 清除错误
+   */
+  clearErrors : function(){
+    var _self = this,
+      innerControl = _self.getInnerControl();
+    innerControl.clearErrors();
+    _self._hideError();
+  },
   /**
    * @protected
    * @override

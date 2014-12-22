@@ -138,7 +138,7 @@ Mixin.prototype = {
   /**
    * 设置值，值的类型取决于编辑器编辑的数据
    * @param {String|Object} value 编辑器显示的值
-   * @param {Boolean} [hideError=false] 设置值时是否隐藏错误
+   * @param {Boolean} [hideError=true] 设置值时是否隐藏错误
    */
   setValue : function(value,hideError){
     var _self = this,
