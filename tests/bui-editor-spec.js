@@ -6,7 +6,9 @@ var Editor = require('../index');
 require('bui-dpl/css/bs3/dpl.css');
 require('bui-dpl/css/bs3/bui.css');
 $('<div><span type="text" id="e1" class="edit-text">编辑</span><span type="text" id="e2" class="edit-text"></span><button id="outer">测试</button></div>').prependTo('body');
-/*
+
+/**/
+
 describe('基本操作', function() {
 
   var editor = new Editor.Editor({
@@ -230,7 +232,6 @@ describe('操作', function() {
 
 });
 
-*/
 
 describe('record editor',function(){
   $('<div><div type="text" id="log" class="edit-sel"></div><button id="btnRecord">触发</button></div>').prependTo('body');

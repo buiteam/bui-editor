@@ -1,28 +1,28 @@
-define("bui-editor/1.1.1/index-debug", ["bui-common/1.1.0/common-debug","jquery","bui-form/1.1.1/index-debug","bui-overlay/1.1.0/index-debug","bui-list/1.1.1/index-debug","bui-data/1.1.0/index-debug"], function(require, exports, module){
-var BUI = require("bui-common/1.1.0/common-debug"),
+define("bui-editor/1.1.4/index-debug", ["bui-common/1.1.2/common-debug","jquery","bui-form/1.1.1/index-debug","bui-overlay/1.1.4/index-debug","bui-list/1.1.2/index-debug","bui-data/1.1.2/index-debug"], function(require, exports, module){
+var BUI = require("bui-common/1.1.2/common-debug"),
   Form = require("bui-form/1.1.1/index-debug"),
   Editor = BUI.namespace('Editor');
 
 BUI.mix(Editor,{
-  Editor : require("bui-editor/1.1.1/src/editor-debug"),
-  RecordEditor : require("bui-editor/1.1.1/src/record-debug"),
-  DialogEditor : require("bui-editor/1.1.1/src/dialog-debug")
+  Editor : require("bui-editor/1.1.4/src/editor-debug"),
+  RecordEditor : require("bui-editor/1.1.4/src/record-debug"),
+  DialogEditor : require("bui-editor/1.1.4/src/dialog-debug")
 });
 
 return Editor;
 
 });
-define("bui-editor/1.1.1/src/editor-debug", ["bui-common/1.1.0/common-debug","jquery","bui-overlay/1.1.0/index-debug"], function(require, exports, module){
+define("bui-editor/1.1.4/src/editor-debug", ["bui-common/1.1.2/common-debug","jquery","bui-overlay/1.1.4/index-debug"], function(require, exports, module){
 /**
  * @ignore
  * @fileOverview 编辑器
  * @author dxq613@gmail.com
  */
 
-var BUI = require("bui-common/1.1.0/common-debug"),
-  Overlay = require("bui-overlay/1.1.0/index-debug").Overlay
+var BUI = require("bui-common/1.1.2/common-debug"),
+  Overlay = require("bui-overlay/1.1.4/index-debug").Overlay
   CLS_TIPS = 'x-editor-tips',
-  Mixin = require("bui-editor/1.1.1/src/mixin-debug");
+  Mixin = require("bui-editor/1.1.4/src/mixin-debug");
 
 /**
  * @class BUI.Editor.Editor
@@ -279,7 +279,7 @@ var editor = Overlay.extend([Mixin],{
 module.exports = editor;
 
 });
-define("bui-editor/1.1.1/src/mixin-debug", ["jquery"], function(require, exports, module){
+define("bui-editor/1.1.4/src/mixin-debug", ["jquery"], function(require, exports, module){
 /**
  * @fileOverview 编辑器扩展类，引入这个扩展，控件可以支持编辑器功能。
  * @ignore
@@ -588,14 +588,14 @@ Mixin.prototype = {
 module.exports = Mixin;
 
 });
-define("bui-editor/1.1.1/src/record-debug", ["bui-common/1.1.0/common-debug","jquery","bui-overlay/1.1.0/index-debug"], function(require, exports, module){
+define("bui-editor/1.1.4/src/record-debug", ["bui-common/1.1.2/common-debug","jquery","bui-overlay/1.1.4/index-debug"], function(require, exports, module){
 /**
  * @fileOverview 对象编辑器
  * @ignore
  */
 
-var BUI = require("bui-common/1.1.0/common-debug"),
-  Editor = require("bui-editor/1.1.1/src/editor-debug");
+var BUI = require("bui-common/1.1.2/common-debug"),
+  Editor = require("bui-editor/1.1.4/src/editor-debug");
 
 /**
  * @class BUI.Editor.RecordEditor
@@ -735,15 +735,15 @@ var editor = Editor.extend({
 module.exports = editor;
 
 });
-define("bui-editor/1.1.1/src/dialog-debug", ["jquery","bui-overlay/1.1.0/index-debug","bui-common/1.1.0/common-debug"], function(require, exports, module){
+define("bui-editor/1.1.4/src/dialog-debug", ["jquery","bui-overlay/1.1.4/index-debug","bui-common/1.1.2/common-debug"], function(require, exports, module){
 /**
  * @fileOverview 使用弹出框作为编辑器
  * @ignore
  */
 
 var $ = require('jquery'),
-  Dialog = require("bui-overlay/1.1.0/index-debug").Dialog,
-  Mixin = require("bui-editor/1.1.1/src/mixin-debug");
+  Dialog = require("bui-overlay/1.1.4/index-debug").Dialog,
+  Mixin = require("bui-editor/1.1.4/src/mixin-debug");
 
  /**
  * @class BUI.Editor.DialogEditor
